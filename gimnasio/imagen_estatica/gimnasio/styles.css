@@ -1,4 +1,4 @@
-/* estilos generales */
+
 body {
     font-family: 'Arial', sans-serif;
     background-image: url("../gimnasio/gimnasio.jpg");
@@ -55,7 +55,7 @@ header form button {
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
-    background-color: #444; /* gris oscuro */
+    background-color: #444; 
     color: #dcdcdc;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -65,13 +65,13 @@ header form button:hover {
     background-color: #666;
 }
 
-/* contenido principal */
+
 main {
     padding: 20px;
     color: #f0f0f0;
 }
 
-/* tablas o formularios dentro de main */
+
 table, form {
     background-color: rgba(0,0,0,0.6);
     padding: 15px;
@@ -87,7 +87,6 @@ input, select, textarea {
     box-sizing: border-box;
 }
 
-/* botones generales */
 button {
     padding: 7px 15px;
     border: none;
@@ -102,4 +101,31 @@ button:hover {
     background-color: #777;
 }
 
+.search-input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.1);
+    color: #eee;
+    font-size: 1em;
+    width: 200px;
+}
 
+.search-input::placeholder {
+    color: #ccc;
+}
+.search-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+.search-button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}

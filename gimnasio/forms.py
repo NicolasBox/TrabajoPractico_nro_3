@@ -21,10 +21,12 @@ class ClaseForm(forms.ModelForm):
 
 
 class SearchForm(forms.Form):
-    query = forms.CharField(label="Buscar", max_length=100)
     q = forms.CharField(
         label="Buscar socio",
         max_length=100,
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': 'Buscar socio'})
+        widget=forms.TextInput(attrs={
+            'placeholder': 'Buscar socio',
+            'class': 'search-input'   
+        })
     )
