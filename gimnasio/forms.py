@@ -25,5 +25,6 @@ class SearchForm(forms.Form):
     q = forms.CharField(
         label="Buscar socio",
         max_length=100,
-        required=False
+        required=False,
+        widget=forms.TextInput(attrs={'placeholder': 'Buscar socio'})
     )

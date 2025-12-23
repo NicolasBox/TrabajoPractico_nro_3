@@ -1,8 +1,105 @@
+/* estilos generales */
 body {
+    font-family: 'Arial', sans-serif;
     background-image: url("../gimnasio/gimnasio.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    color: #dcdcdc; /* gris claro para el texto */
     margin: 0;
+    padding: 0;
 }
+
+/* cabecera */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* fondo semi-transparente */
+    padding: 20px;
+    text-align: center;
+    color: #e0e0e0; /* letras plateadas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* título */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #000; /* da profundidad */
+}
+
+/* navegación */
+header nav a {
+    color: #c0c0c0; /* gris plateado */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffffff; /* resalta al pasar el mouse */
+}
+
+/* formulario de búsqueda */
+header form {
+    margin-top: 15px;
+}
+
+header form input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+header form button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444; /* gris oscuro */
+    color: #dcdcdc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header form button:hover {
+    background-color: #666;
+}
+
+/* contenido principal */
+main {
+    padding: 20px;
+    color: #f0f0f0;
+}
+
+/* tablas o formularios dentro de main */
+table, form {
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* botones generales */
+button {
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #eee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+
