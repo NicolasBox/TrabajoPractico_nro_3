@@ -1,0 +1,17 @@
+{% extends 'gimnasio/base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<h2>Clases disponibles</h2>
+
+<ul>
+    {% for clase in clases %}
+        <li>
+            {{ clase.nombre }} — {{ clase.entrenador }} ({{ clase.horario }})
+        </li>
+    {% empty %}
+        <li>No hay clases cargadas.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
