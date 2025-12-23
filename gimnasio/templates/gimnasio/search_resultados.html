@@ -1,0 +1,19 @@
+{% extends "gimnasio/base.html" %}
+
+{% block content %}
+<h2>Resultados de búsqueda</h2>
+
+{% if query %}
+    <p>Buscaste: <strong>{{ query }}</strong></p>
+{% endif %}
+
+<ul>
+    {% for socio in resultados %}
+        <li>{{ socio.nombre }} - {{ socio.email }}</li>
+    {% empty %}
+        <li>No se encontraron socios</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'index' %}">Volver</a>
+{% endblock %}

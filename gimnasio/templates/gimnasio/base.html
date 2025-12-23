@@ -1,6 +1,10 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="{% static 'gimnasio/styles.css' %}">
     <meta charset="UTF-8">
     <title>{% block title %}Gimnasio{% endblock %}</title>
 </head>
@@ -17,6 +21,7 @@
 
     <form action="{% url 'search' %}" method="get">
         {{ search_form.q }}
+        <input type="text" name="q" placeholder="Buscar socio">
         <button type="submit">Buscar socio</button>
     </form>
 
