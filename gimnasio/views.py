@@ -54,6 +54,6 @@ def search(request):
             results = Socio.objects.filter(nombre__icontains=q)
 
     return render(request, 'gimnasio/search_results.html', {
-        "resultados": resultados,
+        "results": results,
         'query': request.GET.get('q', '')
     })

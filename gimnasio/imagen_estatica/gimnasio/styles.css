@@ -129,3 +129,10 @@ button:hover {
     background-color: #666;
     transform: scale(1.05);
 }
+
+.search-input:focus {
+    background-color: rgba(255,255,255,0.2);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
