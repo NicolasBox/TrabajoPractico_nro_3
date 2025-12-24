@@ -14,10 +14,12 @@ def index(request):
 
 def create_socio(request):
     if request.method == 'POST':
-        form = SocioForm(request.POST)
+        form = SocioForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('index')
+        else:
+            print(form.errors)
     else:
         form = SocioForm()
     return render(request, 'gimnasio/socio_form.html', {'form': form})

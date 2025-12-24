@@ -3,32 +3,37 @@ body {
     font-family: 'Arial', sans-serif;
     background-image: url("../gimnasio/gimnasio.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 20%;
     background-repeat: no-repeat;
-    color: #dcdcdc; /* gris claro para el texto */
+    background-attachment: fixed;
+    color: #dcdcdc; 
     margin: 0;
     padding: 0;
 }
 
-/* cabecera */
+html, body {
+    min-height: 100%;
+}
+
+
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px;
     text-align: center;
-    color: #e0e0e0; /* letras plateadas */
+    color: #e0e0e0; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-/* título */
+
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 3px #000; /* da profundidad */
+    text-shadow: 1px 1px 3px #000; 
 }
 
-/* navegación */
+
 header nav a {
-    color: #c0c0c0; /* gris plateado */
+    color: #c0c0c0; 
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -36,10 +41,10 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #ffffff; /* resalta al pasar el mouse */
+    color: #ffffff; 
 }
 
-/* formulario de búsqueda */
+
 header form {
     margin-top: 15px;
 }
@@ -135,4 +140,49 @@ button:hover {
     outline: none;
     box-shadow: 0 0 5px rgba(255,255,255,0.3);
     transition: 0.3s;
+}
+
+
+.clases-title {
+    font-size: 2.4em;              
+    color: #e0e0e0;                
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px #000;
+}
+
+
+.clases-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.clase-item {
+    font-size: 1.3em;              
+    color: #dcdcdc;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-left: 4px solid #bfbfbf;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 8px;
+}
+
+
+.clase-nombre {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+
+.clase-entrenador {
+    color: #cfcfcf;
+}
+
+.clase-empty {
+    font-style: italic;
+    color: #aaa;
 }

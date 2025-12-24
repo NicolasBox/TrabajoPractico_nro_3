@@ -19,10 +19,18 @@
         <a href="{% url 'create_clase' %}">Nueva Clase</a>
     </nav>
 
-    <form action="{% url 'search' %}" method="get">
-        {{ search_form.q }}       
-        <button type="submit" >Buscar socio</button>
-    </form>
+<form action="{% url 'search' %}" method="get">
+    <input
+        type="text"
+        name="q"
+        placeholder="Buscar socio"
+        class="search-input"
+        value="{{ request.GET.q }}"
+    >
+    <button type="submit" class="search-button">
+        Buscar socio
+    </button>
+</form>
 
     <hr>
 </header>
